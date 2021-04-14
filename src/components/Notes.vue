@@ -4,5 +4,9 @@
         <Note v-for="n in 10" :key="n"/>
         <NewNote/>
      </div>
-
+<NotesForm v-if="show"/>
 </template>
+
+<script setup>
+import {show} from '../helpers/useNote'
+</script>
